@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Studio-Ghibli-Films-API">
         <Routes>
           <Route path="/" element={<RenderFilms />} />
           <Route path="/films/:id" element={<FilmDetail />} />

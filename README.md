@@ -9,7 +9,9 @@ Uma aplicação React moderna para explorar os filmes do Studio Ghibli, consumin
 
 ## Demonstração
 
+Confira o projeto em funcionamento:
 
+https://andre-arcanjo.github.io/Studio-Ghibli-Films-API
 
 ## 📋 Sobre o Projeto
 
