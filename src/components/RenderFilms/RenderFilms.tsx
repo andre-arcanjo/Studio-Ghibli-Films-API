@@ -21,12 +21,19 @@ const RenderFilms = () => {
                 {data &&
                     data.map(movie => (
                         <div key={movie.id}>
-                            <p className="text-center">{movie.title}</p>
+                            <p className="text-center font-semibold">{movie.title}</p>
                             <div className="relative group">
                                 <img className="h-150 object-cover rounded-lg" src={movie.image} alt={movie.title} />
-                                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
-                                    <Link key={movie.id} to={`/films/${movie.id}`} className="bg-white text-black px-4 py-2 rounded-md font-medium hover:bg-gray-200 transition">Saiba mais</Link>
+                                <div className="hidden sm:flex absolute inset-0 sm:opacity-0 sm:bg-black/60 sm:group-hover:opacity-100 transition-opacity rounded-lg items-center justify-center">
+                                    <Link key={movie.id} to={`/films/${movie.id}`} className="bg-white text-black px-4 py-2 rounded-md font-medium hover:bg-gray-200 transition">
+                                        Saiba mais
+                                    </Link>
                                 </div>
+                            </div>
+                            <div className="flex sm:hidden justify-center mt-2">
+                                <Link to={`/films/${movie.id}`} className="bg-neutral-700 text-white px-4 py-2 rounded-md text-sm">
+                                    Saiba mais
+                                </Link>
                             </div>
                         </div>
                     ))
